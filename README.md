@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Assignment 1: Java Classes and Unit Tests
 
 **Student Name**: Premsingh Padya
@@ -28,3 +29,7 @@ Assignment1_c0924501/
 ├── README.md
 └── pom.xml (if using Maven)
 ```
+=======
+# 4464-JavaEE
+For the Java EE Assignments - Premsingh Padya (C0924501)
+>>>>>>> 4a30d3daf06106e9b71a07e47028758b253ef114
