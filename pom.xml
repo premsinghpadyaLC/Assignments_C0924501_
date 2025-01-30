@@ -6,12 +6,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <!-- Project Information -->
-  <groupId>com.example</groupId>
-  <artifactId>assignment01_c0924501</artifactId>
+  <groupId>com.assignment</groupId>
+  <artifactId>assignment1_c0924501</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>Assignment 01 - C0924501</name>
-  <description>A sample Maven project for Assignment 01</description>
-  <url>http://www.example.com</url>
+  <description>my Assignment 01</description>
+  <url>http://www.assignment.com</url>
 
   <!-- Java Version and Encoding -->
   <properties>

@@ -1,4 +1,4 @@
-package com.example;
+package com.assignment;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -11,35 +11,36 @@ public class DogPersonTest {
     @Test
     public void testDogCreation() {
         Dog dog = new Dog("Buddy", 5);
-        assertEquals("Buddy", dog.getName());
-        assertEquals(5, dog.getAge());
+        assertEquals("Buddy", dog.getDogName());
+        assertEquals(5, dog.getDogAge());
     }
 
     @Test
     public void testPersonWithoutDog() {
-        Person person = new Person("John", 30);
+        Person person = new Person("John", 25);
         assertFalse(person.hasOldDog());
     }
 
     @Test
     public void testPersonWithOldDog() {
-        Dog oldDog = new Dog("Max", 12);
-        Person person = new Person("Jane", 40, oldDog);
+        Dog oldDog = new Dog("Charlie", 12);
+        Person person = new Person("Bob", 40, oldDog);
         assertTrue(person.hasOldDog());
     }
 
     @Test
     public void testChangeDogsNameWithDog() {
         Dog dog = new Dog("Buddy", 5);
-        Person person = new Person("John", 30, dog);
-        person.changeDogsName("Charlie");
-        assertEquals("Charlie", dog.getName());
+        Person person = new Person("John", 25, dog);
+        person.changeDogsName("Rocky");
+        assertEquals("Rocky", dog.getDogName());
     }
 
     @Test
     public void testChangeDogsNameWithoutDog() {
-        Person person = new Person("John", 30);
-        Exception exception = assertThrows(RuntimeException.class, () -> person.changeDogsName("Buddy"));
+        Person person = new Person("John", 25);
+        Exception exception = assertThrows(RuntimeException.class, () -> person.changeDogsName("Max"));
         assertEquals("John does not own a dog!", exception.getMessage());
     }
 }
+
